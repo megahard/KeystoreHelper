@@ -5,7 +5,7 @@ using System;
 using System.Text;
 using System.Reflection;
 
-class AndroidKeystoreWindow : EditorWindow {
+class KeystoreHelper : EditorWindow {
 	
 	public const string KEYSTOREPASS = "AKS_keystorePass_";
 	public const string KEYALIASNAME = "AKS_keyaliasName_";
@@ -17,7 +17,7 @@ class AndroidKeystoreWindow : EditorWindow {
 	
 	[MenuItem ("Window/Keystore Helper")]	
 	public static void  ShowWindow () {
-		EditorWindow.GetWindow(typeof(AndroidKeystoreWindow));
+		EditorWindow.GetWindow(typeof(KeystoreHelper));
 	}
 	
 	void OnEnable() {

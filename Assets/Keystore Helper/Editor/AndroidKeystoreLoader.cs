@@ -11,9 +11,9 @@ public class AndroidKeystoreLoader
 	{
 		string keystorePass, keyaliasName, keyaliasPass;
 		
-		keystorePass = AndroidKeystoreWindow.ReadPrefs(AndroidKeystoreWindow.KEYSTOREPASS);
-		keyaliasName = AndroidKeystoreWindow.ReadPrefs(AndroidKeystoreWindow.KEYALIASNAME);
-		keyaliasPass = AndroidKeystoreWindow.ReadPrefs(AndroidKeystoreWindow.KEYALIASPASS);
+		keystorePass = KeystoreHelper.ReadPrefs(KeystoreHelper.KEYSTOREPASS);
+		keyaliasName = KeystoreHelper.ReadPrefs(KeystoreHelper.KEYALIASNAME);
+		keyaliasPass = KeystoreHelper.ReadPrefs(KeystoreHelper.KEYALIASPASS);
 		
 		PlayerSettings.Android.keystorePass = keystorePass;
 		PlayerSettings.Android.keyaliasName = keyaliasName;
